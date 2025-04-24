@@ -6,40 +6,11 @@ const {
   getUniqueYears,
   getUniqueHeadNames,
   getBudgetSummaryByYear,
-  getBudgetDetailsByYearAndHead,
-  BudgetMaster2515,
-  BudgetMasterNABARD,
-  BudgetMasterMP,
-  BudgetMasterMLA,
-  BudgetMasterGAT_FBC,
-  BudgetMasterGAT_D,
-  BudgetMasterGAT_A,
-  BudgetMasterDPDC,
-  BudgetMasterDepositFund,
-  BudgetMasterCRF,
-  BudgetMasterBuilding,
-  BudgetMasterAunty,
-  Cont2515,
-  ContAnnuity,
-  ContBuilding,
-  ContNABARD,
-  ContSHDOR,
-  ContCRF,
-  ContMLA,
-  ContMP,
-  ContDPDC,
-  ContGAT_A,
-  ContGAT_FBC,
-  ContDepositFund,
-  ContGAT_D,
-  ContResidentialBuilding2216,
-  ContNonResidentialBuilding2909,
-  contractorGraph
+  getBudgetDetailsByYearAndHead
 } = require("../controllers/budgetController");
 
 // Route to get budget count
 router.post("/count", getBudgetCount);
-router.post("/contractorGraph", contractorGraph);
 
 // Route to get Upvibhag counts from all budget tables
 router.post("/upvibhag-counts", getUpvibhagCounts);
